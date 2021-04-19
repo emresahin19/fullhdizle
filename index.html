@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Full HD İzle</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><script src="js/db.js"></script>
+    </head>
+
+    <body>
+        <div class="header row">
+            <div class="header-top">
+                <span  class="logo">fullhd filmizle</span>
+                
+                <ul class="header-button">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="#">Filmler</a></li>
+                    <li><a href="#">Diziler</a></li>
+                    <li><a href="#">Çocuk</a></li>
+                    <li><a href="#">Profil</a></li>
+                </ul>
+                <div class="search">
+                     
+                    <form onsubmit="return getQuery(event)" >
+                        <input class="search-box" id="search-box" name="searched" type="search"/>
+                        <button class="button-search" type="submit" onsubmit="return getQuery(event)" onclick="searchFunction()" placeholder="">
+                        
+                       
+                    </form>
+                    <script src="js/db.js"></script>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="main">
+            
+            <div class="main-col-1">
+                <h2>Sizin İçin Seçtiklerimiz</h2>
+                
+
+                <div id="slider">
+                    <div id="slider-pic-5" class="slayt row-2">
+                        <div id="slider-header-5" class="film-about">
+                        </div>
+                    </div>
+                    <div id="slider-pic-6" class="slayt row-3">
+                        <div id="slider-header-6" class="film-about">
+                        </div>
+                    </div>
+                    <div id="slider-pic-7" class="slayt row-4">
+                        <div id="slider-header-7" class="film-about">
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript"  src="js/main.js" language="javascript"></script>
+            </div>
+            
+            <div class="main-col-2" id="main-page">
+                <div class="keyboard">
+                <script>
+                    var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+                    for(i=0; i<alphabet.length; i++)
+                    {
+                        letters = '<button class="letter-search" id="letter-search-'+i+'" onclick="letterSearch('+i+'), keyboardSearch()" type="submit" value="'+alphabet[i]+'"/>'+alphabet[i];
+                        document.write(letters);
+                    }
+                </script>
+                <script type="text/javascript"  src="js/main.js" language="javascript"></script>
+                <script src="js/main-search.js"></script>
+                </div>
+               
+                <div class="movies" id="keyboardsearcher" style="display: none;">
+                   <script>
+                    for(var j=0; j<5; j++)
+                    {
+                        document.write(
+                            '<div class="movies-row-'+j+'">');
+
+                        for(var k=0; k<4; k++)
+                        {
+                            document.write(
+                                '<div class="movie-col-'+k+'" id="movie-col-'+j+'-'+k+'">',
+                                    '<div id="moviepic-col-'+j+'-'+k+'"></div>',
+                                    '<div id="moviea-col-'+j+'-'+k+'"></div>',
+                                '</div>'
+                            );
+                        }
+                        document.write("</div>");
+                    }
+                    </script>
+                    
+
+                    <div class="pages" id="pages">
+                        <button type="submit" id="pagevalue" onclick="pageFunction(11), keyboardSearch()" value="11"><</button>
+                    <script>
+                    for(var k=1; k<11; k++){
+                        pagenumbers = '<button type="submit" id="pagevalue-'+k+'" onclick="pageFunction('+k+'), keyboardSearch()" value="'+k+'">'+k+'</button>';
+                        document.write(pagenumbers);
+                    }
+                    </script>
+                         <button type="submit" id="pagevalue" onclick="pageFunction(0), keyboardSearch()" value="0">></button>
+                        <script src="js/main-search.js"></script>
+                    </div>
+                
+               
+                </div>
+               
+
+                <div class="movies-main" id="lettermain" style="display: block;">
+                    <script src="js/main-trends.js"></script>
+                    <h2 class="populerh2">POPULAR FILMS</h2>
+                    <div class="main-trends" id="main-trends">
+                        
+                        <div class="populers">
+                            <div id="populer-img-0"></div>
+                            <div id="populer-0"></div>
+                        </div>
+                        <div class="populers">
+                            <div id="populer-img-1"></div>
+                            <div id="populer-1"></div>
+                        </div>    
+                        <div class="populers">
+                            <div id="populer-img-2"></div>
+                            <div id="populer-2"></div>
+                        </div>
+                        <div class="populers">
+                            <div id="populer-img-3"></div>
+                            <div id="populer-3"></div>
+                        </div>
+                        <div class="populers">
+                            <div id="populer-img-4"></div>
+                            <div id="populer-4"></div>
+                        </div>
+                    </div>
+
+                    <h2 class="topratedh2">TOP RATED FILMS</h2>
+                    <div class="main-toprated" id="main-toprated">
+                        
+                        <div class="toprateds">
+                            <div id="toprated-img-0"></div>
+                            <div id="toprated-0"></div>
+                        </div>
+                        <div class="toprateds">
+                            <div id="toprated-img-1"></div>
+                            <div id="toprated-1"></div>
+                        </div>    
+                        <div class="toprateds">
+                            <div id="toprated-img-2"></div>
+                            <div id="toprated-2"></div>
+                        </div>
+                        <div class="toprateds">
+                            <div id="toprated-img-3"></div>
+                            <div id="toprated-3"></div>
+                        </div>
+                        <div class="toprateds">
+                            <div id="toprated-img-4"></div>
+                            <div id="toprated-4"></div>
+                        </div>
+                    </div>
+
+                    <h2 class="upcomh2">UPCOMING FILMS</h2>
+                    <div class="main-upcom" id="main-upcom">
+                        
+                        <div class="upcoms">
+                            <div id="upcom-img-0"></div>
+                            <div id="upcom-0"></div>
+                        </div>
+                        <div class="upcoms">
+                            <div id="upcom-img-1"></div>
+                            <div id="upcom-1"></div>
+                        </div>    
+                        <div class="upcoms">
+                            <div id="upcom-img-2"></div>
+                            <div id="upcom-2"></div>
+                        </div>
+                        <div class="upcoms">
+                            <div id="upcom-img-3"></div>
+                            <div id="upcom-3"></div>
+                        </div>
+                        <div class="upcoms">
+                            <div id="upcom-img-4"></div>
+                            <div id="upcom-4"></div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+
+            <div class="main-col-2" id="genre-page" style="display: none;">
+                genre page
+            </div>
+                     
+            <div class="search-main-col-2" id="search-page" style="display:none;">
+                <div id="idcounter" style="display: none;"></div>
+                     <script>
+                        
+                        
+        
+                for(var i=0; i<8; i++)
+                {
+                        document.write(
+                        '<a onclick="myShowFunction'+i+'()" class="searched-films">',
+                            '<div id="film-'+ i +'" class="film-on">',
+                                '<div id="film-picture-'+ i +'"></div>',
+                                '<div id="film-name-'+ i +'"></div>',
+                                '<div id="film-genre-'+ i +'"></div>',
+                                '<div id="film-overview-'+ i +'"></div>',
+                                '<span id="film-rated-'+ i +'"></span>',
+                            '</div>',
+                        '</a>');
+                        
+                        //var selector = document.querySelectorAll('#film-rated-'+i)[0].childNodes;
+                        //console.log(selector.childNodes);
+                     
+                }
+                </script>
+                <script src="js/db.js"></script>
+                <script type="text/javascript"  src="js/main.js" language="javascript"></script>
+                
+            </div>
+            
+            <div class="main-col-3">
+                <div id="genres">
+                <script>
+                    for(var j=0; j<19; j++){
+                        document.write('<a href="#" onclick="genreFunction()" id="genres-'+j+'"></a></br>');
+                    }
+
+
+                </script>
+                <script type="text/javascript"  src="js/main.js" language="javascript"></script>
+              
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="footer-bottom">
+                    <span  class="logo">fullhd filmizle</span>
+                    
+                    <ul class="footer-button">
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="#">Filmler</a></li>
+                        <li><a href="#">Diziler</a></li>
+                        <li><a href="#">Çocuk</a></li>
+                        <li><a href="#">Profil</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
