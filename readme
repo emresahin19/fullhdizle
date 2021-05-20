@@ -1,5 +1,6 @@
 search kısmında girilen kelimeden çıkan array'in eleman sayısını tekrar aynı sayfa içinde for döngüsünün üst sınırı olarak kullanamadığım için boş sayfaları sınırlandıramadım
 yan kısımdaki film türlerini api'den sadece türe göre film çekilemediğinden çalışmıyorlar. fonksiyonu aktif ama
 anasayfada harfe göre aramada alfabetik sıralama yapmadığı için sadece genel searchte o harfi aratacak şekilde yaptım. sort_by=original_title.asc komutu api'da tam olarak istediğim şekilde çalışmıyor
-mozilla firefox üzerinde çalışıyor sadece.
+Bootstrap kullanmadım. Bütün css değişikliklerini elle yaptım. Bu yüzden sadece mozilla firefox üzerinde çalışıyor.
+
 
